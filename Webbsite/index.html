@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image" href="2-removebg-preview.png">
+<title>ERP (ERIK ROININEN PRODUCTIONS)</title>
+<style>
+  /* Modern svart stil */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  /* Större Navbar stil */
+  .navbar {
+    background-color: #111;
+    padding: 30px 0; /* Justera storlek efter behov */
+    text-align: center;
+  }
+  
+  .navbar img {
+    height: 60px; /* Justera storlek efter behov */
+    margin-right: 10px;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 40px; /* Justera storlek efter behov */
+    margin: 0 5px;
+    font-size: 20px; /* Justera storlek efter behov */
+    transition: all 0.3s ease; /* Övergång för smidig animation */
+  }
+  
+  .navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Ändra färg vid hover */
+  }
+  
+  /* Sektion stil */
+  section {
+    height: 700px; /* Rimlig storlek */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 1s ease; /* CSS-animation */
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Lägg till bakgrundsbild på varje sektion */
+  #section1 {
+    background-image: url('1.png');
+    background-size: cover;
+  }
+  
+  #section2 {
+    background-image: url('2.png');
+    background-size: cover;
+  }
+  
+  #section3 {
+    background-image: url('streama i appen ERP PLAY.png');
+    background-size: cover;
+  }
+  
+  #section4 {
+    background-image: url('4.png');
+    background-size: cover;
+  }
+  .knapp {
+            background-color: white;
+            color: black;
+            padding: 15px 30px; /* Justera kuddar för att öka storleken */
+            font-size: 18px;
+            border: 2px solid black; /* Lägg till en svart kant */
+            border-radius: 8px; /* Avrunda hörnen */
+            text-decoration: none; /* Ta bort understrykning */
+            display: inline-block; /* Visa som en blockelement */
+        }
+</style>
+</head>
+<body>
+  <!-- Större Navbar -->
+  <div class="navbar">
+    <img src="2-removebg-preview.png" alt="ERIK ROININEN PRODUCTIONS">
+    <a href="#section1">ERP PLAY</a>
+    <a href="#section2">ERP Cameras</a>
+    <a href="#section3">Skänk pengar</a>
+    <a href="#section4">Kontakta oss</a>
+  </div>
+  
+  <!-- Sections -->
+  <section id="section1">
+    <h1 style="font-size: 50px; padding-top: 200px;">Titta på videor med appen ERP PLAY</h1>
+    <a style="padding-top: 20px;" href="" class="knapp">Ladda ner för Android(.apk)</a>
+    <a style="padding-top: 20px;" href="" class="knapp">Ladda ner för Iphone (.ipa)</a>
+  </section>
+  
+  <section id="section2">
+    <h1 style="padding-top: 200px; font-size: 50px;">Boka kameror med appen ERP Cameras</h1>
+    <a style="padding-top: 20px;" href="ERP Cameras Android (.apk).zip" class="knapp">Ladda ner för Android(.apk)</a>
+    <a style="padding-top: 20px;" href="" class="knapp">Ladda ner för Iphone (.ipa)</a>
+  </section>
+  
+  <section id="section3">
+    <h1 style="padding-top: 200px; font-size: 50px;">Skänk pengar till oss</h1>
+    <p style="font-size: 25px;">Scanna QR koden eller swisha till: 0706002371</p>
+    <img style="width: 300px; font-size: 25px;" src="404631027_1308400073172030_8748184901302905135_n.png">
+  </section>
+  
+  <section id="section4">
+    <h1 style="padding-top: 200px; font-size: 50px;">Kontakta oss</h1>
+    <p style="font-size: 25px;">Mail: erikroininen.productions@gmail.com</p>
+    <a style="padding-top: 20px;" href="mailto:erikroininen.productions@gmail.com" class="knapp">Skicka ett Mail</a>
+  </section>
+
+  <script>
+    // Smidig scrollningsanimation för navigeringslänkar
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
